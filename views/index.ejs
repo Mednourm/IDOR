@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab: Insecure Direct Object References</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #23095e;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-height: 330px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+    
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="pic.png" alt="IDOR" class="hero-image">
+     <h1>
+      Lab: Insecure direct object references (IDOR)
+    </h1>
+    <p>This lab stores user chat logs directly on the server's file system, and retrieves them using static URLs.</p>
+    <p>Solve the lab by finding the password for the user <code>carlos</code>, and logging into their account.</p>
+    <p>For testing purposes, use the following credentials to start:<code>elhadi:med</code></p>
+    <a class="btn" href="/login">Launch Lab</a>
+  </div>
+</body>
+</html>

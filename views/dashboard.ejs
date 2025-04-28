@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .logout {
+      background-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome, <%= user.username %></h1>
+    <a href="/logout" class="btn logout">Logout</a>
+  </div>
+  
+  <div>
+    <p>Welcome to your dashboard. Need help? Contact our support team.</p>
+    <a href="/support-chat" class="btn">Start Support Chat</a>
+  </div>
+</body>
+</html>

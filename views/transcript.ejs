@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Transcript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .transcript {
+      white-space: pre-wrap;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .home {
+      background-color: #607D8B;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Chat Transcript #<%= chatId %></h1>
+    <div>
+      <a href="/support-chat" class="btn home">Back to Chat</a>
+    </div>
+  </div>
+  
+  <div class="transcript"><%= chatContent %></div>
+</body>
+</html>
