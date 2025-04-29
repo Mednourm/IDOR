@@ -144,7 +144,7 @@ User: ${user.username}
 Time: ${timestamp}
 Message: ${message}
 
-Support Response: Thanks for contacting support. For verification, your password is ${users.find(u => u.id === user.id).password}. How can we help you today?
+Support Response: Thanks for contacting support. How can we help you today?
 `;
 
   const chatContent = existingContent + newMessage;
